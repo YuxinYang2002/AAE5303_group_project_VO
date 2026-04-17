@@ -1,0 +1,15 @@
+# 忽略巨大的 ROS 数据包
+*.bag
+
+# 忽略底层编译生成的中间文件
+build/
+devel/
+*.o
+*.so
+
+# 忽略压缩包 (包含你刚才生成的 evo_ape 压缩包)
+*.zip
+
+# 忽略临时文件和 Python 缓存
+__pycache__/
+*.pyc

@@ -1,0 +1,24 @@
+{
+    "name": "AAE5303 ORB-SLAM3 (ROS1)",
+    "image": "liangyu99/orbslam3_ros1:latest",
+    "runArgs": [
+        "--network=host",
+        "--privileged",
+        "-e", "DISPLAY=${env:DISPLAY}",
+        "-e", "QT_X11_NO_MITSHM=1"
+    ],
+    "mounts": [
+        "source=/tmp/.X11-unix,target=/tmp/.X11-unix,type=bind,consistency=cached"
+    ],
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-iot.vscode-ros",
+                "ms-vscode.cpptools",
+                "ms-python.python"
+            ]
+        }
+    },
+    "workspaceFolder": "/workspaces/AAE5303_project",
+    "workspaceMount": "source=${localWorkspaceFolder},target=/workspaces/AAE5303_project,type=bind"
+}
